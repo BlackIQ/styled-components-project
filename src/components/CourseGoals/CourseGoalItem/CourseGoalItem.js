@@ -1,19 +1,14 @@
 import React from 'react';
 
-import './CourseGoalItem.css';
-
 const CourseGoalItem = props => {
-  // const [deleteText, setDeleteText] = useState('');
-
   const deleteHandler = () => {
-    // setDeleteText('(Deleted!)');
     props.onDelete(props.id);
   };
 
   return (
-    <li className="goal-item" onClick={deleteHandler}>
+    <div className='bg-secondary rounded-3 p-3 text-white pointer' onClick={deleteHandler}>
       {props.children}
-    </li>
+    </div>
   );
 };
 
