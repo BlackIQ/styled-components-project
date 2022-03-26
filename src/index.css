@@ -1,11 +1,9 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
 body {
-  margin: 0;
+    font-family: 'Dosis', sans-serif !important;
+}
+
+.pointer {
+    cursor: pointer;
 }
